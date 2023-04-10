@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en, es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="asset/custom.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <style>
+        .list-link {
+            display: flex;
+            margin-left: 30px;
+            list-style: none;
+        }
+        ul {
+            display: flex;
+            margin-left: 100px;
+            margin-top: -35px;
+            text-decoration: none;
+            
+        }
+        a{
+            overflow: none;
+            text-decoration: none;
+            color: black;
+            transition-duration: 2s;
+        }
+        a:hover {
+            transition-duration: 1s;
+            color: aquamarine;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .hello-span{
+            align-items: center!important;
+            padding: 60px;
+            margin-left: 60px;
+            border-left: 6px, rgba(0, 0, 255, 0.383), solid; 
+        }
+        .vertical-hr{
+            width: 10px;
+            height: 100px;
+            background: linear-gradient(90deg, rgb(255, 27, 221) 35%, rgba(0, 251, 255, 0.972) 100%);
+            border-radius: 20px;
+            transition-duration: 3s;
+        }
+        .hello-span:hover .vertical-hr{
+            transition-duration: 3s;
+            height: 10px;
+        }
+        .gallery {
+            margin-left: 30px;
+            width: 1000px;
+            height: auto;
+            margin-top: 120px;
+        }
+        .card{
+            padding: 20px;
+
+        }
+        
+    </style>
+
+    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h2>Wiloux</h2>
+
+        <ul>
+            <li class="list-link">
+                <a href="">Home</a>
+            </li>
+            <li class="list-link">
+                <a href="">About</a>
+            </li>
+            <li class="list-link">
+                <a href="">Contact</a>
+            </li>
+            <li class="list-link">
+                <a href="">Git Hub</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hello-span" style="border-left: 4px, linear-gradient(90deg, rgba(255,225,238,1) 0%, rgba(245,105,225,1) 35%, rgba(147,253,255,0.9724264705882353) 100%);">
+        <hr class="vertical-hr">
+        <h1>Wiloux</h1>
+        <p>Consigue tus plantillas modernas para tus modernos proyectos</p>
+        <img src="13691-minimalista.jpg" alt="">
+    </div>
+
+    <div class="hello-span">
+        <legend>Proyectos</legend>
+        <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <div class="gallery">
+            
+                <div class="card" style="width: 18rem;">
+                    <img src="https://clipground.com/images/html5-logo-9.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Hello World HTML</h5>
+                      <p class="card-text">Creado por wiloux.</p>
+                      <a href="#4363444" class="btn btn-primary" onclick="dffds()">Go somewhere</a>
+                    </div>
+                  </div>
+
+                <div class="modal" id="4363444modal" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Hello World HTML</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>¿Quieres descargar esta plantilla?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" id="close-button-modal" onclick="dsa()" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function dffds() {
+            document.getElementById("4363444modal").style.display = "block";
+            
+        }
+
+        function dsa() {
+            document.getElementById("4363444modal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
