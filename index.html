@@ -65,7 +65,32 @@
         }
         .card{
             padding: 20px;
+            transition-duration: 3s;
+            
 
+        }
+        #card-orange:hover {
+            transition-duration: 3s;
+            transform:rotate(35deg);
+            background: rgb(251, 251, 251);
+            background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(253,79,45,1) 100%);
+        
+        }
+        .card a{
+            transition-duration: 3s;
+        }
+
+        .card:hover a {
+            transition-duration: 3s;
+            background: rgb(251, 251, 251);
+            background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(253,79,45,1) 100%);
+            border: none;
+            color: black;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
         }
         
     </style>
@@ -94,6 +119,13 @@
         <h1>Wiloux</h1>
         <p>Consigue tus plantillas modernas para tus modernos proyectos</p>
         <img src="13691-minimalista.jpg" alt="">
+        <br>
+        <br>
+        <div class="card">
+            <div class="card-body">
+              Actualmente estamos en version de prueba
+            </div>
+          </div>
     </div>
 
     <div class="hello-span">
@@ -101,8 +133,8 @@
         <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
             <div class="gallery">
             
-                <div class="card" style="width: 18rem;">
-                    <img src="https://clipground.com/images/html5-logo-9.png" class="card-img-top" alt="...">
+                <div class="card mb-3" id="card-orange" style="width: 15rem;">
+                    <img src="https://clipground.com/images/html5-logo-9.png" class="card-img-top" width="100%" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Hello World HTML</h5>
                       <p class="card-text">Creado por wiloux.</p>
@@ -122,7 +154,7 @@
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" id="close-button-modal" onclick="dsa()" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
+                          <button type="button" class="btn btn-primary"><a class="eeeee" href="/helloworldHTMLbyWILOUX.html">Sí</a></button>
                         </div>
                       </div>
                     </div>
